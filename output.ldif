@@ -1,0 +1,142 @@
+dn: dc=example,dc=com
+objectClass: top
+objectClass: domain
+dc: example
+aci: (target=ldap:///dc=example,dc=com)(targetattr=*)(version 3.0; acl "acl1"; allow(write) userdn = "ldap:///self";) 
+aci: (target=ldap:///dc=example,dc=com)(targetattr=*)(version 3.0; acl "acl2"; allow(write) groupdn = "ldap:///cn=Directory Administrators, dc=example,dc=com";)
+aci: (target=ldap:///dc=example,dc=com)(targetattr=*)(version 3.0; acl "acl3"; allow(read, search, compare) userdn = "ldap:///anyone";)
+
+dn: ou=Accounting,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Accounting
+
+dn: ou=Product Development,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Product Development
+
+dn: ou=Product Testing,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Product Testing
+
+dn: ou=Human Resources,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Human Resources
+
+dn: ou=Payroll,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Payroll
+
+dn: uid=VChalker3339363799,ou=Human Resources,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Varennes Chalker
+sn: Chalker
+uid: VChalker3339363799
+givenName: Varennes
+description: 2;9745;CN=Red Hat CS 71GA Demo,O=Red Hat CS 71GA Demo,C=US;CN=RHCS Agent - admin01,UID=admin01,O=redhat,C=US [1] This is Varennes Chalker's description.
+userPassword: VChalker3339363799
+departmentNumber: 3147
+employeeType: Normal
+homePhone: +1 303 968-4433
+initials: V. C.
+telephoneNumber: +1 303 214-1638
+facsimileTelephoneNumber: +1 206 353-8202
+mobile: +1 213 581-7275
+pager: +1 415 168-5582
+manager: cn=Joanna Knuth
+secretary: cn=Randhir Vonderweidt
+roomNumber: 5116
+carLicense: SN6DM37
+l: Redmond
+ou: Human Resources
+mail: Varennes_Chalker@example.com
+postalAddress: 58,  Dept #438, Room#Human Resources
+title: Elite Human Resources Manager
+usercertificate;binary:: MIIBvjCCASegAwIBAgIBAjANBgkqhkiG9w0BAQQFADAnMQ8wDQYD
+ VQQDEwZjb25maWcxFDASBgNVBAMTC01NUiBDQSBDZXJ0MB4XDTAxMDQwNTE1NTEwNloXDTExMDcw
+ NTE1NTEwNlowIzELMAkGA1UEChMCZnIxFDASBgNVBAMTC01NUiBTMSBDZXJ0MIGfMA0GCSqGSIb3
+ DQEBAQUAA4GNADCBiQKBgQDNlmsKEaPD+o3mAUwmW4E40MPs7aiui1YhorST3KzVngMqe5PbObUH
+ MeJN7CLbq9SjXvdB3y2AoVl/s5UkgGz8krmJ8ELfUCU95AQls321RwBdLRjioiQ3MGJiFjxwYRIV
+ j1CUTuX1y8dC7BWvZ1/EB0yv0QDtp2oVMUeoK9/9sQIDAQABMA0GCSqGSIb3DQEBBAUAA4GBADev
+ hxY6QyDMK3Mnr7vLGe/HWEZCObF+qEo2zWScGH0Q+dAmhkCCkNeHJoqGN4NWjTdnBcGaAr5Y85k1
+ o/vOAMBsZePbYx4SrywL0b/OkOmQX+mQwieC2IQzvaBRyaNMh309vrF4w5kExReKfjR/gXpHiWQz
+ GSxC5LeQG4k3IP34
+
+dn: dc=example,dc=com
+objectClass: top
+objectClass: domain
+dc: example
+aci: (target=ldap:///dc=example,dc=com)(targetattr=*)(version 3.0; acl "acl1"; allow(write) userdn = "ldap:///self";) 
+aci: (target=ldap:///dc=example,dc=com)(targetattr=*)(version 3.0; acl "acl2"; allow(write) groupdn = "ldap:///cn=Directory Administrators, dc=example,dc=com";)
+aci: (target=ldap:///dc=example,dc=com)(targetattr=*)(version 3.0; acl "acl3"; allow(read, search, compare) userdn = "ldap:///anyone";)
+
+dn: ou=Accounting,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Accounting
+
+dn: ou=Product Development,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Product Development
+
+dn: ou=Product Testing,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Product Testing
+
+dn: ou=Human Resources,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Human Resources
+
+dn: ou=Payroll,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Payroll
+
+dn: uid=VChalker3339363799,ou=Human Resources,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Varennes Chalker
+sn: Chalker
+uid: VChalker3339363799
+givenName: Varennes
+description: 2;9745;CN=Red Hat CS 71GA Demo,O=Red Hat CS 71GA Demo,C=US;CN=RHCS Agent - admin01,UID=admin01,O=redhat,C=US [1] This is Varennes Chalker's description.
+userPassword: VChalker3339363799
+departmentNumber: 3147
+employeeType: Normal
+homePhone: +1 303 968-4433
+initials: V. C.
+telephoneNumber: +1 303 214-1638
+facsimileTelephoneNumber: +1 206 353-8202
+mobile: +1 213 581-7275
+pager: +1 415 168-5582
+manager: cn=Joanna Knuth
+secretary: cn=Randhir Vonderweidt
+roomNumber: 5116
+carLicense: SN6DM37
+l: Redmond
+ou: Human Resources
+mail: Varennes_Chalker@example.com
+postalAddress: 58,  Dept #438, Room#Human Resources
+title: Elite Human Resources Manager
+usercertificate;binary:: MIIBvjCCASegAwIBAgIBAjANBgkqhkiG9w0BAQQFADAnMQ8wDQYD
+ VQQDEwZjb25maWcxFDASBgNVBAMTC01NUiBDQSBDZXJ0MB4XDTAxMDQwNTE1NTEwNloXDTExMDcw
+ NTE1NTEwNlowIzELMAkGA1UEChMCZnIxFDASBgNVBAMTC01NUiBTMSBDZXJ0MIGfMA0GCSqGSIb3
+ DQEBAQUAA4GNADCBiQKBgQDNlmsKEaPD+o3mAUwmW4E40MPs7aiui1YhorST3KzVngMqe5PbObUH
+ MeJN7CLbq9SjXvdB3y2AoVl/s5UkgGz8krmJ8ELfUCU95AQls321RwBdLRjioiQ3MGJiFjxwYRIV
+ j1CUTuX1y8dC7BWvZ1/EB0yv0QDtp2oVMUeoK9/9sQIDAQABMA0GCSqGSIb3DQEBBAUAA4GBADev
+ hxY6QyDMK3Mnr7vLGe/HWEZCObF+qEo2zWScGH0Q+dAmhkCCkNeHJoqGN4NWjTdnBcGaAr5Y85k1
+ o/vOAMBsZePbYx4SrywL0b/OkOmQX+mQwieC2IQzvaBRyaNMh309vrF4w5kExReKfjR/gXpHiWQz
+ GSxC5LeQG4k3IP34
+

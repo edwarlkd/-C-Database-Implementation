@@ -1,0 +1,9 @@
+# ========IGNORING THE FOLLOWING FILES==================
+*.o
+*.out
+QueryLexer.c
+QueryParser.c
+QueryParser.h
+output/*
+.tmp/*
+PairingHeap.*
